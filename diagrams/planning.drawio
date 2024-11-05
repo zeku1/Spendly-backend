@@ -1,0 +1,16 @@
+<mxfile host="65bd71144e">
+    <diagram id="9HdqBuZpw-7Yf1D_bpSN" name="Page-1">
+        <mxGraphModel dx="2140" dy="1198" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 39px;&quot;&gt;Spendly&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="353" y="30" width="145" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Here will be the flowchart for the algorithm of the backend&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="170" width="750" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
