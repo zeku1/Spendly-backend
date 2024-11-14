@@ -14,7 +14,7 @@ class BudgetsController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**

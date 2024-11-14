@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('address')->nullable();
             $table->string('phone');
-            $table->string('currency');
+            $table->enum('currency',['php','usd','sgd','yen','eur'])->default('php');
             $table->rememberToken();
             $table->timestamps();
         });

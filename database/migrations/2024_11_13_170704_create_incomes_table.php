@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use PhpParser\Node\NullableType;
 
 return new class extends Migration
 {
@@ -13,6 +14,14 @@ return new class extends Migration
     {
         Schema::create('incomes', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')
+                ->constrained('users')
+                ->cascadeOnDelete();
+            $table->double('amount')->default(0.0);
+            $table->string('source')->nullable()->default('');
+            $table->date('date')->nullable();
+            $table->string('note')->nullable()->default('');
+
             $table->timestamps();
         });
     }

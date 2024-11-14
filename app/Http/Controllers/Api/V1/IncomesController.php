@@ -6,6 +6,7 @@ use App\Models\Incomes;
 use App\Http\Requests\StoreIncomesRequest;
 use App\Http\Requests\UpdateIncomesRequest;
 use App\Http\Controllers\Controller;
+use Illuminate\Database\Eloquent\Collection;
 
 class IncomesController extends Controller
 {
@@ -14,7 +15,12 @@ class IncomesController extends Controller
      */
     public function index()
     {
-        //
+        $incomes = Incomes::all();
+
+        return response()->json([
+            'message' => 'successfull',
+            'incomes' => $incomes,
+        ],200);
     }
 
     /**

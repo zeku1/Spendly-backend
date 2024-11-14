@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('budgets', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')
+                ->constrained('users')  // Specify the 'users' table
+                ->cascadeOnDelete();     // Apply cascade on delete behavior
+            $table->foreignId('category_id')
+                ->constrained('categories');  // Correctly reference 'categories' table
+            $table->double('amount')->default(0.0);
+            $table->string('note')->nullable();
             $table->timestamps();
         });
     }
